@@ -5,6 +5,7 @@ function LateralMenu() {
     <nav>
       <ul>
         <li>Início</li>
+        <li>Meio</li>
         <li>Fim</li>
       </ul>
     </nav>
