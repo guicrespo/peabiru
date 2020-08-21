@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import LateralMenu from './components/LateralMenu';
 
 function App() {

@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.lateral-menu {
+  align-items: center;
+  background-color: rgb(153, 9, 0);
+  border-bottom: 5px solid rgb(255, 153, 0);
+  border-top: 5px solid rgb(255, 153, 0);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 15%;
+}
+
+.lateral-menu-list {
+  list-style-type: none;
+  margin-left: -100%;
+  padding: 0;
+}
+
+.lateral-menu-list li {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.peabiru-logo {
+  height: auto;
+  padding: 2rem 1rem 0;
+  width: 100%;
+}
