@@ -3,9 +3,9 @@ import LateralMenu from './components/LateralMenu';
 
 function App() {
   return (
-    <div className="App">
+    <section className="body">
       <LateralMenu />
-    </div>
+    </section>
   );
 }
 
