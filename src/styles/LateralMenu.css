@@ -1,12 +1,11 @@
 * {
   box-sizing: border-box;
+  font-family: Merriweather;
 }
 
 .lateral-menu {
   align-items: center;
   background-color: rgb(153, 9, 0);
-  /* border-bottom: 5px solid rgb(255, 153, 0);
-  border-top: 5px solid rgb(255, 153, 0); */
   border-right: 5px solid rgb(255, 153, 0);
   display: flex;
   flex-direction: column;
@@ -38,17 +37,9 @@
   margin-bottom: 1rem;
 }
 
-.sub-menu {
-  visibility: hidden;
-  transition: transform .3s ease;
-}
-
-.is-open {
-  visibility: visible;
-}
-
 .lateral-menu-list button {
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .lateral-menu-list ul li {
@@ -68,7 +59,54 @@
 }
 
 .lateral-menu-list a {
+  color: white;
   text-decoration: none;
+}
+
+.custom-underline {
+  position: relative;
+}
+
+.custom-underline::after {
+  content: "";
+  position: absolute;
+}
+
+.line .custom-underline::after {
+  top: 100%;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  background-color: rgb(255, 153, 0);
+    transition: 0.5s ease all;
+}
+
+.line:hover .custom-underline::after {
+  width: 100%;
+    transition: 0.3s ease all;
+}
+
+.sub-custom-underline {
+  position: relative;
+}
+
+.sub-custom-underline::after {
+  content: "";
+  position: absolute;
+}
+
+.sub-line .sub-custom-underline::after {
+  top: 100%;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  background-color: rgb(255, 153, 0);
+    transition: 0.5s ease all;
+}
+
+.sub-line:hover .sub-custom-underline::after {
+  width: 100%;
+    transition: 0.3s ease all;
 }
 
 .peabiru-logo {
@@ -80,33 +118,11 @@
 
 .social-media {
   padding-bottom: 1.5rem;
-  margin-top: 4rem;
+  margin-top: auto;
 }
 
 .social-media img {
   height: auto;
   padding: 0 1.5rem;
   width: 5rem;
-}
-
-ul > li {
-  position: relative;
-}
-
-ul > li::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(255, 153, 0);
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out 0s;
-}
-
-ul > li:hover::before {
-  visibility: visible;
-  transform: scaleX(1);
 }

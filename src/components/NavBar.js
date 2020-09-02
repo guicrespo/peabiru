@@ -8,14 +8,15 @@ function NavBar() {
     <nav>
       <section>
         <ul className="lateral-menu-list">
-          <li><a href="/">Início</a></li>
-          <li>
+          <li className="line"><a href="/" className="custom-underline">Início</a></li>
+          <li className="line">
             <button
               type="button"
               onClick={() => {
                 setOpenActivities(false);
                 setOpenWho(!openWho);
               }}
+              className="custom-underline"
               style={{ backgroundColor: 'transparent', border: 'none', padding: 0, color: 'white' }}
             >
               Quem Somos
@@ -25,19 +26,20 @@ function NavBar() {
               openWho
               && (
                 <ul>
-                  <a href="/quem-somos/historia"><li>História</li></a>
-                  <a href="/quem-somos/integrantes"><li>Integrantes</li></a>
+                  <li className="sub-line"><a href="/quem-somos/historia" className="sub-custom-underline">História</a></li>
+                  <li className="sub-line"><a href="/quem-somos/integrantes" className="sub-custom-underline">Integrantes</a></li>
                 </ul>
               )
             }
           </li>
-          <li>
+          <li className="line">
             <button
               type="button"
               onClick={() => {
                 setOpenWho(false);
                 setOpenActivities(!openActivities);
               }}
+              className="custom-underline"
               style={{ backgroundColor: 'transparent', border: 'none', padding: 0, color: 'white' }}
             >
               Atividades
@@ -47,18 +49,18 @@ function NavBar() {
               openActivities
               && (
                 <ul>
-                  <a href="/atividades/projetos"><li>Projetos</li></a>
-                  <a href="/atividades/calendario"><li>Calendário</li></a>
-                  <a href="/atividades/eventos"><li>Eventos</li></a>
-                  <a href="/atividades/parcerias"><li>Parcerias</li></a>
+                  <li className="sub-line"><a href="/atividades/projetos" className="sub-custom-underline">Projetos</a></li>
+                  <li className="sub-line"><a href="/atividades/calendario" className="sub-custom-underline">Calendário</a></li>
+                  <li className="sub-line"><a href="/atividades/eventos" className="sub-custom-underline">Eventos</a></li>
+                  <li className="sub-line"><a href="/atividades/parcerias" className="sub-custom-underline">Parcerias</a></li>
                 </ul>
               )
             }
           </li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/publicacoes">Publicações</a></li>
-          <li><a href="/galeria">Galeria</a></li>
-          <li><a href="/contato">Contato</a></li>
+          <li className="line"><a href="/blog" className="custom-underline">Blog</a></li>
+          <li className="line"><a href="/publicacoes" className="custom-underline">Publicações</a></li>
+          <li className="line"><a href="/galeria" className="custom-underline">Galeria</a></li>
+          <li className="line"><a href="/contato" className="custom-underline">Contato</a></li>
         </ul>
       </section>
     </nav>
