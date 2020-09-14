@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import { AppContext } from '../context';
 
 function NavBar() {
-  const [openWho, setOpenWho] = useState(false);
-  const [openActivities, setOpenActivities] = useState(false);
+  const { openWho, setOpenWho } = useContext(AppContext);
+  const { openActivities, setOpenActivities } = useContext(AppContext);
 
   return (
     <nav>

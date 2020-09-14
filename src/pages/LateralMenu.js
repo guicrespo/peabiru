@@ -2,8 +2,7 @@ import React from 'react';
 import PeabiruLogo from '../assets/images/peabiru-logo-pequi.svg';
 import instaIcon from '../assets/icons/insta-icon.svg';
 import twitterIcon from '../assets/icons/twitter-icon.svg';
-import NavBar from './NavBar';
-import '../styles/LateralMenu.css';
+import NavBar from '../components/NavBar';
 
 function LateralMenu() {
   return (

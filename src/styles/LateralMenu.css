@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Merriweather;
+  src: url('../fonts/Merriweather-Regular.ttf')
+}
+
 * {
   box-sizing: border-box;
   font-family: Merriweather;
@@ -107,6 +112,14 @@
 .sub-line:hover .sub-custom-underline::after {
   width: 100%;
     transition: 0.3s ease all;
+}
+
+.underscore {
+  top: 100%;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: rgb(255, 153, 0);
 }
 
 .peabiru-logo {
