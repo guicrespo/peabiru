@@ -17,7 +17,9 @@ function LateralMenu() {
       </section>
       <NavBar />
       <section className="social-media">
-        <img src={instaIcon} alt="logo do instagram" />
+        <a href="https://www.instagram.com/grupopeabiru/" target="_blank" rel="noopener noreferrer">
+          <img src={instaIcon} alt="logo do instagram" />
+        </a>
         <img src={twitterIcon} alt="logo do twitter" />
       </section>
     </aside>
