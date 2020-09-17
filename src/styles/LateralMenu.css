@@ -1,0 +1,166 @@
+@font-face {
+  font-family: Merriweather;
+  src: url('../fonts/Merriweather-Regular.ttf');
+}
+
+@font-face {
+  font-family: Merriweather;
+  src: url('../fonts/Merriweather-Black.ttf');
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Merriweather, Helvetica, sans-serif;
+}
+
+.lateral-menu {
+  align-items: center;
+  background-color: rgb(153, 9, 0);
+  border-right: 5px solid rgb(255, 153, 0);
+  box-shadow: inset -0.8rem 0 2rem 0.5rem rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  left: 0;
+  max-width: 14.9rem;
+  min-width: 13rem;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 16%;
+}
+
+.lateral-menu-list {
+  list-style-type: none;
+  margin-bottom: 3rem;
+  padding: 0;
+}
+
+.lateral-menu-list ul {
+  list-style-type: none;
+  margin: 1rem 0 1.5rem;
+}
+
+.lateral-menu-list li {
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.lateral-menu-list button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.lateral-menu-list ul li {
+  font-size: 0.9rem;
+}
+
+.lateral-menu-list li > div {
+  font-size: 0.7rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+  width: fit-content;
+}
+
+.toggle-arrow {
+  transform: rotate(180deg);
+  transition-duration: 1s;
+}
+
+.lateral-menu-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.custom-underline {
+  position: relative;
+}
+
+.custom-underline:after {
+  content: '';
+  position: absolute;
+}
+
+.line .custom-underline:after {
+  top: 100%;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  background-color: rgb(255, 153, 0);
+  transition: 0.5s ease all;
+}
+
+.line .permanent_underscore:after {
+  top: 100%;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: rgb(255, 153, 0);
+  transition: 0.5s ease all;
+}
+
+.line:hover .custom-underline:after {
+  width: 100%;
+  transition: 0.3s ease all;
+}
+
+.sub-custom-underline {
+  position: relative;
+}
+
+.sub-custom-underline:after {
+  content: '';
+  position: absolute;
+}
+
+.sub-line .sub-custom-underline:after {
+  top: 100%;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  background-color: rgb(255, 153, 0);
+  transition: 0.5s ease all;
+}
+
+.sub-line .permanent_underscore:after {
+  top: 100%;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: rgb(255, 153, 0);
+  transition: 0.5s ease all;
+}
+
+.permanent_underscore {
+  font-weight: 900;
+}
+
+.sub-line:hover .sub-custom-underline:after {
+  width: 100%;
+  transition: 0.3s ease all;
+}
+
+.peabiru-logo {
+  height: auto;
+  padding: 2rem 1rem 0;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.social-media {
+  padding-bottom: 1.5rem;
+  margin-top: auto;
+}
+
+.social-media img {
+  height: auto;
+  padding: 0 1.5rem;
+  width: 5rem;
+}

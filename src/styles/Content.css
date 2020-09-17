@@ -1,0 +1,17 @@
+.content-body {
+  margin-left: 15rem;
+  margin-right: 5rem;
+  padding: 2rem 4rem;
+}
+
+.content-body > h2 {
+  color: #990900;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 63px;
+  text-transform: capitalize;
+}
+
+.history-p {
+  line-height: 30px;
+}
