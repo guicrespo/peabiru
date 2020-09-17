@@ -1,41 +1,37 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context';
 
+const className = (item, underscore) => {
+  if (item === underscore) {
+    return 'permanent_underscore';
+  }
+  return undefined;
+};
+
 const WhoWeAre = () => {
-  const {
-    openWho,
-    setOpenWho,
-    underscore,
-  } = useContext(AppContext);
+  const { openWho, setOpenWho, underscore } = useContext(AppContext);
 
   return (
     <li className="line">
       <button
         type="button"
         onClick={() => setOpenWho(!openWho)}
-        className={`custom-underline ${underscore === 'history' || underscore === 'members' ? 'permanent_underscore' : undefined}`}
-        style={{ backgroundColor: 'transparent', border: 'none', padding: 0, color: 'white' }}
+        className={`custom-underline ${className('history', underscore) || className('members', underscore)}`}
       >
         Quem Somos
       </button>
-      <div className={openWho && 'toggle-arrow'}>▼</div>
+      <div className={openWho ? 'toggle-arrow' : undefined}>▼</div>
       {
         openWho
         && (
           <ul>
-            <li className={`sub-line ${underscore === 'history' ? 'permanent_underscore' : undefined}`}>
-              <a
-                href="/quem-somos/historia"
-                className={`sub-custom-underline ${underscore === 'history' ? 'permanent_underscore' : undefined}`}
-              >
+            <li className={`sub-line ${className('history', underscore)}`}>
+              <a href="/quem-somos/historia" className={`sub-custom-underline ${className('history', underscore)}`}>
                 História
               </a>
             </li>
-            <li className={`sub-line ${underscore === 'members' ? 'permanent_underscore' : undefined}`}>
-              <a
-                href="/quem-somos/integrantes"
-                className={`sub-custom-underline ${underscore === 'members' ? 'permanent_underscore' : undefined}`}
-              >
+            <li className={`sub-line ${className('members', underscore)}`}>
+              <a href="/quem-somos/integrantes" className={`sub-custom-underline ${className('members', underscore)}`}>
                 Integrantes
               </a>
             </li>
@@ -61,11 +57,10 @@ const Activities = () => {
             ? 'permanent_underscore'
             : undefined}`
         }
-        style={{ backgroundColor: 'transparent', border: 'none', padding: 0, color: 'white' }}
       >
         Atividades
       </button>
-      <div className={openActivities && 'toggle-arrow'}>▼</div>
+      <div className={openActivities ? 'toggle-arrow' : undefined}>▼</div>
       {
         openActivities
         && (
