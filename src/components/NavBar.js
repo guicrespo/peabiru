@@ -21,8 +21,7 @@ const WhoWeAre = () => {
         Quem Somos
       </button>
       <div className={openWho ? 'toggle-arrow' : undefined}>▼</div>
-      {
-        openWho
+      {openWho
         && (
           <ul>
             <li className={`sub-line ${className('history', underscore)}`}>
@@ -36,8 +35,7 @@ const WhoWeAre = () => {
               </a>
             </li>
           </ul>
-        )
-      }
+        )}
     </li>
   );
 };
@@ -45,31 +43,21 @@ const WhoWeAre = () => {
 const Activities = () => {
   const { openActivities, setOpenActivities, underscore } = useContext(AppContext);
   const pages = ['projects', 'calendar', 'events', 'partners'];
-
   return (
     <li className="line">
       <button
         type="button"
         onClick={() => setOpenActivities(!openActivities)}
-        className={
-          `custom-underline 
-          ${pages.includes(underscore)
-            ? 'permanent_underscore'
-            : undefined}`
-        }
+        className={`custom-underline  ${pages.includes(underscore) ? 'permanent_underscore' : undefined}`}
       >
         Atividades
       </button>
       <div className={openActivities ? 'toggle-arrow' : undefined}>▼</div>
-      {
-        openActivities
+      {openActivities
         && (
           <ul>
             <li className={`sub-line ${className('projects', underscore)}`}>
-              <a
-                href="/atividades/projetos"
-                className={`sub-custom-underline ${className('projects', underscore)}`}
-              >
+              <a href="/atividades/projetos" className={`sub-custom-underline ${className('projects', underscore)}`}>
                 Projetos
               </a>
             </li>
@@ -89,8 +77,7 @@ const Activities = () => {
               </a>
             </li>
           </ul>
-        )
-      }
+        )}
     </li>
   );
 };
