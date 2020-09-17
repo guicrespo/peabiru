@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-  const [underscore, setUnderscore] = useState('');
+  const [underscore, setUnderscore] = useState('home');
   const [openWho, setOpenWho] = useState(false);
   const [openActivities, setOpenActivities] = useState(false);
 
@@ -16,6 +16,7 @@ export const AppProvider = ({ children }) => {
     openActivities,
     setOpenActivities,
   };
+
   return (
     <AppContext.Provider value={context}>
       {children}
