@@ -65,26 +65,26 @@ const Activities = () => {
         openActivities
         && (
           <ul>
-            <li className={`sub-line ${underscore === 'projects' ? 'permanent_underscore' : undefined}`}>
+            <li className={`sub-line ${className('projects', underscore)}`}>
               <a
                 href="/atividades/projetos"
-                className={`sub-custom-underline ${underscore === 'projects' ? 'permanent_underscore' : undefined}`}
+                className={`sub-custom-underline ${className('projects', underscore)}`}
               >
                 Projetos
               </a>
             </li>
-            <li className={`sub-line ${underscore === 'calendar' ? 'permanent_underscore' : undefined}`}>
-              <a href="/atividades/calendario" className={`sub-custom-underline ${underscore === 'calendar' ? 'permanent_underscore' : undefined}`}>
+            <li className={`sub-line ${className('calendars', underscore)}`}>
+              <a href="/atividades/calendario" className={`sub-custom-underline ${className('calendars', underscore)}`}>
                 Calendário
               </a>
             </li>
-            <li className={`sub-line ${underscore === 'events' ? 'permanent_underscore' : undefined}`}>
-              <a href="/atividades/eventos" className={`sub-custom-underline ${underscore === 'events' ? 'permanent_underscore' : undefined}`}>
+            <li className={`sub-line ${className('events', underscore)}`}>
+              <a href="/atividades/eventos" className={`sub-custom-underline ${className('events', underscore)}`}>
                 Eventos
               </a>
             </li>
-            <li className={`sub-line ${underscore === 'partners' ? 'permanent_underscore' : undefined}`}>
-              <a href="/atividades/parcerias" className={`sub-custom-underline ${underscore === 'partners' ? 'permanent_underscore' : undefined}`}>
+            <li className={`sub-line ${className('partners', underscore)}`}>
+              <a href="/atividades/parcerias" className={`sub-custom-underline ${className('partners', underscore)}`}>
                 Parcerias
               </a>
             </li>
@@ -103,16 +103,24 @@ function NavBar() {
       <section>
         <ul className="lateral-menu-list">
           <li className="line">
-            <a href="/" className={`custom-underline ${underscore === 'home' ? 'permanent_underscore' : undefined}`}>
+            <a href="/" className={`custom-underline ${className('home', underscore)}`}>
               Início
             </a>
           </li>
           <WhoWeAre />
           <Activities />
-          <li className="line"><a href="/blog" className="custom-underline">Blog</a></li>
-          <li className="line"><a href="/publicacoes" className="custom-underline">Publicações</a></li>
-          <li className="line"><a href="/galeria" className="custom-underline">Galeria</a></li>
-          <li className="line"><a href="/contato" className="custom-underline">Contato</a></li>
+          <li className="line">
+            <a href="/blog" className={`custom-underline ${className('blog', underscore)}`}>Blog</a>
+          </li>
+          <li className="line">
+            <a href="/publicacoes" className={`custom-underline ${className('publications', underscore)}`}>Publicações</a>
+          </li>
+          <li className="line">
+            <a href="/galeria" className={`custom-underline ${className('galery', underscore)}`}>Galeria</a>
+          </li>
+          <li className="line">
+            <a href="/contato" className={`custom-underline ${className('contacts', underscore)}`}>Contato</a>
+          </li>
         </ul>
       </section>
     </nav>
