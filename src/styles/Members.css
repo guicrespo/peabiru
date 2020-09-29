@@ -9,21 +9,21 @@
   transform: scale(1.02);
 }
 
-.members-card:nth-child(odd) {
+.members-card:nth-child( odd ) {
   box-shadow: 5px 5px 18px rgb(138, 138, 138);
   flex-direction: row-reverse;
 }
 
-.members-card:nth-child(even) {
+.members-card:nth-child( even ) {
   box-shadow: -5px 5px 18px rgb(138, 138, 138);
 }
 
-.members-card:nth-child(odd) img {
+.members-card:nth-child( odd ) img {
   object-fit: cover;
   max-width: 200px;
 }
 
-.members-card:nth-child(even) img {
+.members-card:nth-child( even ) img {
   object-fit: cover;
   max-width: 200px;
 }
@@ -38,10 +38,10 @@
   line-height: 21px;
 }
 
-.members-card:nth-child(odd) .members-card-text {
+.members-card:nth-child( odd ) .members-card-text {
   padding: 1rem 2rem;
 }
 
-.members-card:nth-child(even) .members-card-text {
+.members-card:nth-child( even ) .members-card-text {
   padding: 1rem 2rem;
 }
