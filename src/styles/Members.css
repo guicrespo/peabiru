@@ -1,0 +1,47 @@
+.members-card {
+  background-color: rgb(153, 9, 0);
+  display: flex;
+  margin: 0 0 4rem 3rem;
+  transition: transform 1s;
+}
+
+.members-card:hover {
+  transform: scale(1.02);
+}
+
+.members-card:nth-child(odd) {
+  box-shadow: 5px 5px 18px rgb(138, 138, 138);
+  flex-direction: row-reverse;
+}
+
+.members-card:nth-child(even) {
+  box-shadow: -5px 5px 18px rgb(138, 138, 138);
+}
+
+.members-card:nth-child(odd) img {
+  object-fit: cover;
+  max-width: 200px;
+}
+
+.members-card:nth-child(even) img {
+  object-fit: cover;
+  max-width: 200px;
+}
+
+.members-card h3 {
+  color: rgb(255, 186, 59);
+}
+
+.members-card p {
+  color: rgb(255, 253, 250);
+  font-size: 0.85rem;
+  line-height: 21px;
+}
+
+.members-card:nth-child(odd) .members-card-text {
+  padding: 1rem 2rem;
+}
+
+.members-card:nth-child(even) .members-card-text {
+  padding: 1rem 2rem;
+}

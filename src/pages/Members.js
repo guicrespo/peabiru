@@ -1,5 +1,7 @@
 import React, { useContext, useEffect } from 'react';
+import MembersCard from '../components/MembersCard';
 import { AppContext } from '../context';
+import '../styles/Members.css';
 
 const Members = () => {
   const { setOpenWho, setUnderscore } = useContext(AppContext);
@@ -12,6 +14,7 @@ const Members = () => {
   return (
     <article className="content-body">
       <h2>Integrantes</h2>
+      <MembersCard />
     </article>
   );
 };

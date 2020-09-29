@@ -82,7 +82,7 @@ const Activities = () => {
   );
 };
 
-function NavBar() {
+const NavBar = () => {
   const { underscore } = useContext(AppContext);
 
   return (
@@ -112,6 +112,6 @@ function NavBar() {
       </section>
     </nav>
   );
-}
+};
 
 export default NavBar;
