@@ -1,0 +1,21 @@
+.project-title-section {
+  display: flex;
+}
+
+.project-title-section > button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+}
+
+.project-title-section > button:hover {
+  cursor: pointer;
+}
+
+.plus {
+  color: rgb(153, 9, 0);
+}
+
+.minus {
+  color: rgb(255, 153, 0);
+}
