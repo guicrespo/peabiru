@@ -7,6 +7,7 @@ import HistoryPage from './pages/HistoryPage';
 import Members from './pages/Members';
 import './styles/LateralMenu.css';
 import './styles/Content.css';
+import Projects from './pages/Projects';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route path="/quem-somos/historia" component={HistoryPage} />
             <Route path="/quem-somos/integrantes" component={Members} />
+            <Route path="/atividades/projetos" component={Projects} />
           </Switch>
         </BrowserRouter>
       </AppProvider>
