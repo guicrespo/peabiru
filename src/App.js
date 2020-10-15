@@ -5,9 +5,13 @@ import LateralMenu from './pages/LateralMenu';
 import Home from './pages/Home';
 import HistoryPage from './pages/HistoryPage';
 import Members from './pages/Members';
+import Projects from './pages/Projects';
+import Calendar from './pages/Calendar';
+import Events from './pages/Events';
+import Partners from './pages/Partners';
+import Publications from './pages/Publications';
 import './styles/LateralMenu.css';
 import './styles/Content.css';
-import Projects from './pages/Projects';
 
 function App() {
   return (
@@ -17,9 +21,13 @@ function App() {
           <LateralMenu />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/quem-somos/historia" component={HistoryPage} />
-            <Route path="/quem-somos/integrantes" component={Members} />
-            <Route path="/atividades/projetos" component={Projects} />
+            <Route exact path="/quem-somos/historia" component={HistoryPage} />
+            <Route exact path="/quem-somos/integrantes" component={Members} />
+            <Route exact path="/atividades/projetos" component={Projects} />
+            <Route exact path="/atividades/calendario" component={Calendar} />
+            <Route exact path="/atividades/eventos" component={Events} />
+            <Route exact path="/atividades/parcerias" component={Partners} />
+            <Route path="/publicacoes" component={Publications} />
           </Switch>
         </BrowserRouter>
       </AppProvider>
