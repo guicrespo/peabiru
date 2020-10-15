@@ -42,7 +42,7 @@ const WhoWeAre = () => {
 
 const Activities = () => {
   const { openActivities, setOpenActivities, underscore } = useContext(AppContext);
-  const pages = ['projects', 'calendar', 'events', 'partners'];
+  const pages = ['projects', 'calendars', 'events', 'partners'];
   return (
     <li className="line">
       <button
