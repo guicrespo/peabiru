@@ -10,7 +10,7 @@
   width: 30%;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input , .contact-form textarea {
   background: none;
   border: 1px solid rgb(153, 9, 0);
   font-size: 0.8rem;
@@ -37,7 +37,7 @@
   margin: 1rem 0 0.5rem;
 }
 
-.other-contacts p, .other-contacts a {
+.other-contacts p , .other-contacts a {
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
