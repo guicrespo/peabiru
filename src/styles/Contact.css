@@ -1,0 +1,48 @@
+.contact-section {
+  display: flex;
+  margin-left: 3rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10rem;
+  width: 30%;
+}
+
+.contact-form input, .contact-form textarea {
+  background: none;
+  border: 1px solid rgb(153, 9, 0);
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+
+.contact-form button {
+  background: none;
+  border: 1px solid rgb(153, 9, 0);
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  width: 5rem;
+}
+
+.contact-form button:hover {
+  background-color: rgb(153, 9, 0);
+  color: white;
+  cursor: pointer;
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.other-contacts p, .other-contacts a {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.other-contacts a {
+  color: rgb(153, 9, 0);
+  text-decoration: none;
+}
