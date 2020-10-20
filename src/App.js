@@ -10,6 +10,8 @@ import Calendar from './pages/Calendar';
 import Events from './pages/Events';
 import Partners from './pages/Partners';
 import Publications from './pages/Publications';
+import Galery from './pages/Galery';
+import Contact from './pages/Contact';
 import './styles/LateralMenu.css';
 import './styles/Content.css';
 
@@ -28,6 +30,8 @@ function App() {
             <Route exact path="/atividades/eventos" component={Events} />
             <Route exact path="/atividades/parcerias" component={Partners} />
             <Route path="/publicacoes" component={Publications} />
+            <Route path="/galeria" component={Galery} />
+            <Route path="/contato" component={Contact} />
           </Switch>
         </BrowserRouter>
       </AppProvider>

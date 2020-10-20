@@ -1,19 +1,19 @@
 import React, { useContext, useEffect } from 'react';
 import { AppContext } from '../context';
 
-const Publications = () => {
+const Galery = () => {
   const { setUnderscore } = useContext(AppContext);
 
   useEffect(() => {
-    setUnderscore('publications');
+    setUnderscore('galery');
   }, []);
 
   return (
     <section className="content-body">
-      <h2>Publicações</h2>
+      <h2>Galeria</h2>
       <p><em>Em construção.</em></p>
     </section>
   );
 };
 
-export default Publications;
+export default Galery;
