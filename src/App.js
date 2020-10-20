@@ -12,6 +12,8 @@ import Partners from './pages/Partners';
 import Publications from './pages/Publications';
 import Galery from './pages/Galery';
 import Contact from './pages/Contact';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import './styles/LateralMenu.css';
 import './styles/Content.css';
 
@@ -29,6 +31,8 @@ function App() {
             <Route exact path="/atividades/calendario" component={Calendar} />
             <Route exact path="/atividades/eventos" component={Events} />
             <Route exact path="/atividades/parcerias" component={Partners} />
+            <Route exact path="/blog" component={Blog} />
+            <Route path="/blog/:post" component={BlogPost} />
             <Route path="/publicacoes" component={Publications} />
             <Route path="/galeria" component={Galery} />
             <Route path="/contato" component={Contact} />
