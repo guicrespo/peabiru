@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 
 const formInputs = (handleChange, senderInfo) => (
-  <>
+  // eslint-disable-next-line react/jsx-fragments
+  <React.Fragment>
     <label htmlFor="name">Nome</label>
     <input id="name" name="name" type="text" required onChange={handleChange} value={senderInfo.name} />
     <label htmlFor="email">Email</label>
@@ -11,7 +12,7 @@ const formInputs = (handleChange, senderInfo) => (
     <input id="subject" name="subject" type="text" required onChange={handleChange} value={senderInfo.subject} />
     <label htmlFor="message">Mensagem</label>
     <textarea id="message" name="message" rows="10" required onChange={handleChange} value={senderInfo.message} />
-  </>
+  </React.Fragment>
 );
 
 const ContactForm = () => {
