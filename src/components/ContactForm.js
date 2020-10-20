@@ -5,13 +5,41 @@ const formInputs = (handleChange, senderInfo) => (
   // eslint-disable-next-line react/jsx-fragments
   <React.Fragment>
     <label htmlFor="name">Nome</label>
-    <input id="name" name="name" type="text" required onChange={handleChange} value={senderInfo.name} />
+    <input
+      id="name"
+      name="name"
+      type="text"
+      required
+      onChange={handleChange}
+      value={senderInfo.name}
+    />
     <label htmlFor="email">Email</label>
-    <input id="email" name="email" type="email" required onChange={handleChange} value={senderInfo.email} />
+    <input
+      id="email"
+      name="email"
+      type="email"
+      required
+      onChange={handleChange}
+      value={senderInfo.email}
+    />
     <label htmlFor="subject">Assunto</label>
-    <input id="subject" name="subject" type="text" required onChange={handleChange} value={senderInfo.subject} />
+    <input
+      id="subject"
+      name="subject"
+      type="text"
+      required
+      onChange={handleChange}
+      value={senderInfo.subject}
+    />
     <label htmlFor="message">Mensagem</label>
-    <textarea id="message" name="message" rows="10" required onChange={handleChange} value={senderInfo.message} />
+    <textarea
+      id="message"
+      name="message"
+      rows="10"
+      required
+      onChange={handleChange}
+      value={senderInfo.message}
+    />
   </React.Fragment>
 );
 
