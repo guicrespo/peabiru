@@ -17,7 +17,7 @@ const Contact = () => {
         <ContactForm />
         <section className="other-contacts">
           <p>Ou envie um email para:</p>
-          <a href="mailto:peabiru@peabiru.com">peabiru@peabiru.com</a>
+          <a href="mailto:peabiru.pesquisa@gmail.com">peabiru.pesquisa@gmail.com</a>
         </section>
       </section>
     </section>
