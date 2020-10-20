@@ -44,6 +44,9 @@ plugins:
       extensions:
         - .js
         - .jsx
+    checks:
+      react/no-danger:
+        enabled: false
   fixme:
     enabled: true
   nodesecurity:
