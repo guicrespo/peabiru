@@ -25,6 +25,7 @@ const BlogList = () => {
               <div className="card" key={post.id}>
                 <div className="card-content">
                   <h3>{post.title.rendered}</h3>
+                  {/* eslint-disable-next-line react/no-danger */}
                   <div dangerouslySetInnerHTML={{ __html: sanitizer(post.excerpt.rendered) }} />
                 </div>
               </div>
