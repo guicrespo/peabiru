@@ -20,6 +20,7 @@
 .contact-form button {
   background: none;
   border: 1px solid rgb(153, 9, 0);
+  color: black;
   font-size: 0.9rem;
   margin-top: 1rem;
   padding: 0.5rem;
