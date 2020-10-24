@@ -11,8 +11,8 @@ const BlogList = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get('https://techcrunch.com/wp-json/wp/v2/posts').then((result) => setPosts(result.data));
     setUnderscore('blog');
+    axios.get('https://techcrunch.com/wp-json/wp/v2/posts').then((result) => setPosts(result.data));
   }, []);
 
   return (
