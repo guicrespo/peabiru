@@ -51,11 +51,11 @@
     margin: 1rem 1rem 3rem;
   }
 
-  .members-card:nth-child( odd ), .members-card:nth-child( even ) {
+  .members-card:nth-child( odd ) , .members-card:nth-child( even ) {
     flex-direction: column;
   }
 
-  .members-card:nth-child( odd ) img, .members-card:nth-child( even ) img {
+  .members-card:nth-child( odd ) img , .members-card:nth-child( even ) img {
     max-width: none;
   }
 }

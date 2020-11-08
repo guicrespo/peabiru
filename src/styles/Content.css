@@ -18,7 +18,8 @@
   display: none;
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and ( max-width : 840px ) {
+
   body {
     margin: 0;
   }
@@ -36,8 +37,8 @@
 
   .mobile-page-title {
     background-color: #990900;
-    box-shadow: -2px 0.1px 5px rgb(0, 0, 0);
-    color:  rgb(255, 153, 0);
+    box-shadow: -2px 0.1px 5px black;
+    color: rgb(255, 153, 0);
     display: block;
     margin: 0;
     padding: 1rem;

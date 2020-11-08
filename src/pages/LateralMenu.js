@@ -4,17 +4,15 @@ import NavBarMobile from '../components/NavBarMobile';
 import PeabiruLogoComponent from '../components/PeabiruLogo';
 import SocialMediaNavBar from '../components/SocialMediaNavBar';
 
-const LateralMenu = () => {
-  return (
-    <aside>
-      <section className="lateral-menu">
-        <PeabiruLogoComponent />
-        <NavBar />
-        <SocialMediaNavBar />
-      </section>
-      <NavBarMobile />
-    </aside>
-  );
-};
+const LateralMenu = () => (
+  <aside>
+    <section className="lateral-menu">
+      <PeabiruLogoComponent />
+      <NavBar />
+      <SocialMediaNavBar />
+    </section>
+    <NavBarMobile />
+  </aside>
+);
 
 export default LateralMenu;

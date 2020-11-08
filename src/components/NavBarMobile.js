@@ -55,16 +55,14 @@ const styles = {
   },
 };
 
-const NavBarMobile = () => {
-  return (
-    <section className="hamburger-menu">
-      <Menu styles={styles}>
-        <PeabiruLogoComponent />
-        <NavBar />
-        <SocialMediaNavBar />
-      </Menu>
-    </section>
-  );
-};
+const NavBarMobile = () => (
+  <section className="hamburger-menu">
+    <Menu styles={styles}>
+      <PeabiruLogoComponent />
+      <NavBar />
+      <SocialMediaNavBar />
+    </Menu>
+  </section>
+);
 
 export default NavBarMobile;
