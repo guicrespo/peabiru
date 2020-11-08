@@ -25,6 +25,7 @@ const styles = {
   },
   bmCross: {
     background: 'rgb(255, 153, 0)',
+    height: '20px',
   },
   bmMenuWrap: {
     position: 'fixed',
@@ -45,7 +46,7 @@ const styles = {
   },
   bmItemList: {
     color: '#b8b7ad',
-    padding: '0.8em',
+    padding: '0 0.8em',
   },
   bmItem: {
     display: 'inline-block',
