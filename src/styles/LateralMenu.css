@@ -159,7 +159,7 @@ body {
 }
 
 .social-media {
-  padding-bottom: 1.5rem;
+  padding-bottom: 1.0rem;
   margin-top: auto;
 }
 
@@ -171,6 +171,15 @@ body {
 
 .hamburger-menu {
   display: none;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    background: rgb(255, 153, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00000059;
 }
 
 @media only screen and ( max-width : 840px ) {
