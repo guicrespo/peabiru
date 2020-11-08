@@ -22,6 +22,7 @@ function App() {
     <section className="body">
       <AppProvider>
         <BrowserRouter>
+          <h1 className="mobile-page-title">PEABIRU</h1>
           <LateralMenu />
           <Switch>
             <Route exact path="/" component={Home} />

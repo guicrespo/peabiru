@@ -168,3 +168,26 @@ body {
   padding: 0 1.5rem;
   width: 5rem;
 }
+
+.hamburger-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 840px) {
+  .lateral-menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .peabiru-logo {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .social-media {
+    padding-top: 3rem;
+  }
+}

@@ -45,3 +45,17 @@
 .members-card:nth-child( even ) .members-card-text {
   padding: 1rem 2rem;
 }
+
+@media only screen and (max-width: 1200px) {
+  .members-card {
+    margin: 1rem 1rem 3rem;
+  }
+
+  .members-card:nth-child( odd ), .members-card:nth-child( even ) {
+    flex-direction: column;
+  }
+
+  .members-card:nth-child( odd ) img, .members-card:nth-child( even ) img {
+    max-width: none;
+  }
+}
