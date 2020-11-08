@@ -47,3 +47,19 @@
   color: rgb(153, 9, 0);
   text-decoration: none;
 }
+
+@media only screen and ( max-width : 840px ) {
+
+  .contact-section {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .other-contacts {
+    margin-top: 1rem;
+  }
+}

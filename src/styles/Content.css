@@ -13,3 +13,37 @@
 .history-p {
   line-height: 30px;
 }
+
+.mobile-page-title {
+  display: none;
+}
+
+@media only screen and ( max-width : 840px ) {
+
+  body {
+    margin: 0;
+  }
+
+  .content-body {
+    margin: 5rem 1rem;
+    padding: 0 1rem;
+  }
+
+  .content-body > h2 {
+    font-size: 2rem;
+    line-height: 63px;
+    margin-bottom: 0;
+  }
+
+  .mobile-page-title {
+    background-color: #990900;
+    box-shadow: -2px 0.1px 5px black;
+    color: rgb(255, 153, 0);
+    display: block;
+    margin: 0;
+    padding: 1rem;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+  }
+}
