@@ -35,15 +35,21 @@
     margin-bottom: 0;
   }
 
-  .mobile-page-title {
+  .mobile-page-title-section {
     background-color: #990900;
     box-shadow: -2px 0.1px 5px black;
-    color: rgb(255, 153, 0);
     display: block;
-    margin: 0;
-    padding: 1rem;
     position: fixed;
     text-align: center;
     width: 100%;
+  }
+  
+  .mobile-page-title {
+    display: block;
+  }
+  
+  .mobile-page-title a {
+    color: rgb(255, 153, 0);
+    text-decoration: none;
   }
 }
