@@ -60,4 +60,8 @@
     max-width: none;
     width: 100%;
   }
+
+  .members-card:hover {
+    transform: none;
+  }
 }
