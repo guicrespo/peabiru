@@ -58,5 +58,6 @@
 
   .members-card:nth-child( odd ) img , .members-card:nth-child( even ) img {
     max-width: none;
+    width: 100%;
   }
 }
