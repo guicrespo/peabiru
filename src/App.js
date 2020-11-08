@@ -22,7 +22,9 @@ function App() {
     <section className="body">
       <AppProvider>
         <BrowserRouter>
-          <h1 className="mobile-page-title">PEABIRU</h1>
+          <a href="/" style={{ textDecoration: 'none' }}>
+            <h1 className="mobile-page-title">PEABIRU</h1>
+          </a>
           <LateralMenu />
           <Switch>
             <Route exact path="/" component={Home} />
