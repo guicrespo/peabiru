@@ -11,7 +11,7 @@ const Members = () => {
   useEffect(() => {
     setOpenWho(true);
     setUnderscore('members');
-    const fetchHistory = async () => {
+    const fetchMembers = async () => {
       const { members } = await request(
         process.env.REACT_APP_GRAPHCMS_URI,
         `
@@ -28,7 +28,7 @@ const Members = () => {
       );
       setMembersInfo(members);
     };
-    fetchHistory();
+    fetchMembers();
   }, []);
 
   return (

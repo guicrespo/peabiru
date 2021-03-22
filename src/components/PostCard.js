@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import fomartDate from '../utils';
+import { formatDateWithoutTime } from '../utils';
 
 const PostCard = ({ post }) => (
   <article className="post-card">
@@ -12,7 +12,7 @@ const PostCard = ({ post }) => (
       {` ${post.author}`}
     </h4>
     <p className="post-card-description">{post.description}</p>
-    <p className="post-card-date">{fomartDate(post.createdAt)}</p>
+    <p className="post-card-date">{formatDateWithoutTime(post.createdAt)}</p>
   </article>
 );
 
