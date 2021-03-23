@@ -1,44 +1,16 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { request } from 'graphql-request';
-// import dompurify from 'dompurify';
 import { AppContext } from '../context';
 import PostCard from '../components/PostCard';
 import SearchPostInput from '../components/SearchPostInput';
 import '../styles/BlogList.css';
 
-// const sanitizer = dompurify.sanitize;
-
 const BlogList = () => {
-  const { setUnderscore } = useContext(AppContext);
-  const [posts, setPosts] = useState([]);
+  const { setUnderscore, posts } = useContext(AppContext);
   const [filteredPosts, setFilteredPosts] = useState(null);
 
   useEffect(() => {
     setUnderscore('blog');
-    const fetchPosts = async () => {
-      const { blogPost } = await request(
-        process.env.REACT_APP_GRAPHCMS_URI,
-        `
-          query {
-            blogPost {
-              id
-              slug
-              title
-              createdAt
-              updatedAt
-              author
-              description
-              body {
-                html
-              }
-            }
-          }
-        `,
-      );
-      setPosts(blogPost);
-    };
-
-    fetchPosts();
   }, []);
 
   const postsToRender = filteredPosts || posts;

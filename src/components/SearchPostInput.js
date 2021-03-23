@@ -12,10 +12,10 @@ const SearchPostInput = ({ posts, setFilteredPosts }) => {
       const filteredResults = posts.filter(({
         author,
         title,
-        description,
+        abstract,
       }) => author.toLowerCase().match(searchTerm)
       || title.toLowerCase().match(searchTerm)
-        || description.toLowerCase().match(searchTerm));
+        || abstract.toLowerCase().match(searchTerm));
       if (filteredResults.length) return setFilteredPosts(filteredResults);
       return setFilteredPosts([]);
     }
