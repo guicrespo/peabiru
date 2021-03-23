@@ -9,6 +9,7 @@
     "axios": "^0.20.0",
     "dompurify": "^2.1.1",
     "emailjs-com": "^2.6.3",
+    "graphql": "^15.5.0",
     "graphql-request": "^3.4.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -16,14 +17,16 @@
     "react-dom": "^16.13.1",
     "react-pro-sidebar": "^0.4.4",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "serve": "^11.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test-coverage": "react-scripts test --coverage --watchAll=false",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,5 +46,9 @@
   "devDependencies": {
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-jam3": "^0.2.3"
+  },
+  "engines": {
+    "node": "12.14.1",
+    "npm": "6.14.8"
   }
 }
