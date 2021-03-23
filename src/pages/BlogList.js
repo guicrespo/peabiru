@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { request } from 'graphql-request';
 import { AppContext } from '../context';
 import PostCard from '../components/PostCard';
 import SearchPostInput from '../components/SearchPostInput';

@@ -33,7 +33,10 @@ const HistoryPage = () => {
   return (
     <article className="content-body">
       <h2>História</h2>
-      <section dangerouslySetInnerHTML={{ __html: sanitizer(historyText) }} className="history-section" />
+      <section
+        dangerouslySetInnerHTML={{ __html: sanitizer(historyText) }}
+        className="history-section"
+      />
     </article>
   );
 };

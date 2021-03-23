@@ -20,7 +20,7 @@ const SearchPostInput = ({ posts, setFilteredPosts }) => {
       return setFilteredPosts([]);
     }
     setSearchTerm(undefined);
-    setFilteredPosts(posts);
+    return setFilteredPosts(posts);
   }, [debouncedSearchTerm]);
 
   const handleChange = ({ target: { value } }) => {
