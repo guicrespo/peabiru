@@ -1,18 +1,22 @@
 import React from 'react';
-import members from '../mocks/membersMock';
+import PropTypes from 'prop-types';
 
-const MembersCard = () => (
+const MembersCard = ({ members }) => (
   <section>
-    {members.map(({ name, biography, photo }) => (
+    {members.map(({ name, bio, photo: { url } }) => (
       <article className="members-card" key={name}>
-        <img src={photo} alt={`retrato do ${name}`} />
+        <img src={url} alt={`retrato do ${name}`} />
         <div className="members-card-text">
           <h3>{name}</h3>
-          <p>{biography}</p>
+          <p>{bio}</p>
         </div>
       </article>
     ))}
   </section>
 );
+
+MembersCard.propTypes = {
+  members: PropTypes.instanceOf(Array).isRequired,
+};
 
 export default MembersCard;

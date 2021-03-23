@@ -1,31 +1,42 @@
-import React, { useContext, useEffect } from 'react';
+import request from 'graphql-request';
+import React, { useContext, useEffect, useState } from 'react';
+import dompurify from 'dompurify';
 import { AppContext } from '../context';
+
+const sanitizer = dompurify.sanitize;
 
 const HistoryPage = () => {
   const { setOpenWho, setUnderscore } = useContext(AppContext);
+  const [historyText, setHistoryText] = useState('');
 
   useEffect(() => {
     setOpenWho(true);
     setUnderscore('history');
+    const fetchHistory = async () => {
+      const { histories } = await request(
+        process.env.REACT_APP_GRAPHCMS_URI,
+        `
+          query {
+            histories {
+              text {
+                html
+              }
+            }
+          }
+        `,
+      );
+      setHistoryText(histories[0].text.html);
+    };
+    fetchHistory();
   }, []);
 
   return (
     <article className="content-body">
       <h2>História</h2>
-      <p className="history-p">
-        {`Somos um núcleo de pesquisa em história e constitucionalismo da América Latina.
-        O nome PEABIRU homenageia os senderos indígenas que ligavam os Andes ao Oceano Atlântico, 
-        atravessando os atuais territórios do Peru, da Bolívia, do Paraguai e do Brasil.`}
-      </p>
-      <p className="history-p">
-        {`Nosso intuito é pesquisar sobre uma história silenciada e minimizada pelo discurso jurídico hegemônico, 
-        bem como abrir caminhos para uma crítica da teoria e da prática constitucional contemporânea.`}
-      </p>
-      <p className="history-p">
-        {`Assim, o Peabiru se apresenta como um grupo interdisciplinar, composto por pessoas de todo o Brasil 
-        interessadas nos entrelaçamentos entre história e direito a partir de uma perspectiva renovada da 
-        história da América Latina e da formação do direito moderno.`}
-      </p>
+      <section
+        dangerouslySetInnerHTML={{ __html: sanitizer(historyText) }}
+        className="history-section"
+      />
     </article>
   );
 };

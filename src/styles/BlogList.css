@@ -1,0 +1,56 @@
+.search-input-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-input {
+  background: rgb(255, 253, 250);
+  border: 1px solid #990900;
+  height: 35px;
+  outline: 0;
+  padding: 5px 10px;
+  width: 300px;
+}
+
+.search-input-label {
+  margin-bottom: 10px;
+}
+
+.post-card {
+  margin-top: 50px;
+}
+
+.post-link {
+  color: black;
+  display: block;
+  text-decoration: none;
+  width: max-content;
+}
+
+.post-link-title {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.post-link:hover {
+  text-decoration: underline;
+}
+
+.post-card-author {
+  color: #a00a00;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.post-card-description {
+  line-height: 30px;
+  margin-top: 0;
+  width: 70%;
+}
+
+.post-card-date {
+  color: #818181;
+  font-size: 14px;
+}
