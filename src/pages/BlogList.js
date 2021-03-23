@@ -10,7 +10,7 @@ const BlogList = () => {
 
   useEffect(() => {
     setUnderscore('blog');
-  }, []);
+  }, [posts]);
 
   const postsToRender = filteredPosts || posts;
 
